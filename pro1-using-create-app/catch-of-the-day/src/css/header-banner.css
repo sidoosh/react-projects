@@ -1,0 +1,111 @@
+.sap-banner {
+  height: 360px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0; }
+  .sap-banner__container {
+    height: 360px;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    zIndex: -1000; }
+  .sap-banner ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0; }
+  .sap-banner--slide {
+    background-size: cover;
+    text-align: center;
+    height: 360px !important;
+    position: relative; }
+  .sap-banner--spotlight-banner {
+    background-color: #4aa3da;
+    position: absolute;
+    left: -70px;
+    top: 70px;
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-45deg);
+    /* Chrome, Safari, Opera */
+    font-size: 20px;
+    color: #fff;
+    padding: 10px;
+    width: 290px;
+    text-align: center; }
+    .sap-banner--spotlight-banner-wrapper {
+      position: absolute;
+      overflow: hidden;
+      width: 290px;
+      height: 220px; }
+  .sap-banner--feature-image {
+    margin: auto;
+    width: 90px;
+    height: 90px;
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    position: relative; }
+    .sap-banner--feature-image img {
+      width: 65px;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .sap-banner--headline, .sap-banner-feature--headline {
+    color: #FFF;
+    font-size: 46px;
+    font-weight: 200;
+    padding-top: 60px; }
+  .sap-banner--headline--accent {
+    color: #FFEF00; }
+  .sap-banner--tagline, .sap-banner-feature--tagline {
+    color: #FFF;
+    font-size: 23px;
+    margin-top: -12px; }
+  .sap-banner-feature--learn-more {
+    font-family: 'Bentonsans-Medium', Arial, Helvetica, sans-serif;
+    background-color: #148fcf;
+    color: #fff;
+    padding: 10px 25px;
+    display: block;
+    width: 85px;
+    margin: auto;
+    margin-top: -5px;
+    font-size: 15px; }
+    .sap-banner-feature--learn-more:hover {
+      text-decoration: none;
+      background-color: #f0ab00; }
+  .sap-banner-feature--tagline {
+    font-family: 'Bentonsans-Medium', Arial, Helvetica, sans-serif;
+    line-height: 28px;
+    margin-top: -7px; }
+  .sap-banner-feature--headline {
+    padding-top: 5px;
+    font-size: 41px;
+    font-family: 'Bentonsans-Medium', Arial, Helvetica, sans-serif; }
+  .sap-banner--link {
+    color: #FFF;
+    font-size: 18px;
+    margin-top: 40px;
+    text-decoration: underline; }
+
+.adb-responsive .sap-banner--slide {
+  background-color: #618ed0; }
+
+.sap-slider-enter {
+  transform: translate(100%); }
+  .sap-slider-enter.sap-slider-enter-active {
+    transform: translate(0%);
+    transition: transform 2000ms ease-in-out; }
+
+.sap-slider-leave {
+  transform: translate(0%); }
+  .sap-slider-leave.sap-slider-leave-active {
+    transform: translate(-100%);
+    transition: transform 2000ms ease-in-out; }
+
+/*# sourceMappingURL=header-banner.css.map */

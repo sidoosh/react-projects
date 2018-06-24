@@ -1,0 +1,90 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+#game-start {
+    position: relative;
+    z-index: 999;
+}
+
+#modal {
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+}
+
+.button-style {
+    width: 70px;
+    margin: 10px -30px 10px 100px;
+    height: 50px;
+    font-size: 20px;
+    font-family: cursive;
+}
+.button-style:hover {
+    background-color: #ccc;
+}
+
+ol, ul {
+    padding-left: 30px;
+}
+
+.board-row:after {
+     clear: both;
+     content: "";
+     display: table;
+}
+
+.status {
+     margin-bottom: 10px;
+}
+
+.square {
+     background: #fff;
+     border: 1px solid #999;
+     float: left;
+     font-size: 24px;
+     font-weight: bold;
+     line-height: 34px;
+     height: 34px;
+     margin-right: -1px;
+     margin-top: -1px;
+     padding: 0;
+     text-align: center;
+     width: 34px;
+}
+.move-button:focus {
+     background-color: #9c9c9c;
+}
+
+.square:focus {
+     outline: none;
+}
+
+.kbd-navigation .square:focus {
+     background: #ddd;
+}
+
+.game {
+     display: flex;
+     flex-direction: row;
+}
+
+.game-info {
+     margin-left: 20px;
+}
+
+.play-button-style {
+    width: 107px;
+    margin: 10px -39px 10px 149px;
+    height: 50px;
+    font-size: 20px;
+    font-family: cursive;
+    margin-left: 40%;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "sap-slider",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "history": "4.2.0",
+    "re-base": "2.2.0",
+    "react": "15.3.2",
+    "react-addons-css-transition-group": "15.3.2",
+    "react-dom": "15.3.2",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.17",
+    "sass": "^1.0.0-beta.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "watch": "concurrently --names \"webpack, sass\" --prefix name \"npm run start\" \"npm run styles:watch\"",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "styles": "sass ./src/css/_header-banner.scss ./src/css/header-banner.css",
+    "styles:watch": "sass -w ./src/css/header-banner.scss ./src/css/header-banner.css"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/react-scripts/.eslintrc"
+  }
+}

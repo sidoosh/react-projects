@@ -1,0 +1,171 @@
+// Styling for all banners
+$sap-banner-height: 360px;
+$sap-banner-z-index: 0;
+$sap-blue: #0076CB;
+$sap-white: #fff;
+$sap-blue2: #618ed0;
+
+.sap-banner {
+	height: $sap-banner-height;
+	overflow: hidden;
+	position: relative;
+	z-index: $sap-banner-z-index;
+
+	&__container {
+		height: $sap-banner-height;
+		position: absolute;
+		width: 100%;
+		top: $sap-banner-height * 0;
+		zIndex: (-1000,);
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
+
+	&--slide {
+		background-size: cover;
+		text-align: center;
+		height: $sap-banner-height !important;
+		position: relative;
+	}
+
+	&--spotlight-banner {
+		background-color: #4aa3da;
+		position: absolute;
+		left: -70px;
+		top: 70px;
+		transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+
+		/* IE 9 */
+		-webkit-transform: rotate(-45deg);
+
+		/* Chrome, Safari, Opera */
+		font-size: 20px;
+		color: #fff;
+		padding: 10px;
+		width: 290px;
+		text-align: center;
+
+		&-wrapper {
+			position: absolute;
+			overflow: hidden;
+			width: 290px;
+			height: 220px;
+		}
+	}
+
+	&--feature {
+		&-image {
+			margin: auto;
+			width: 90px;
+			height: 90px;
+			margin-top: 20px;
+			background-color: #fff;
+			border: 1px solid #fff;
+			border-radius: 50px;
+			position: relative;
+
+			img {
+				width: 65px;
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+
+	&--headline, &-feature--headline {
+		color: #FFF;
+
+		//	font-family: $font-family-sap-bentonsans-light;
+		font-size: 46px;
+		font-weight: 200;
+		padding-top: 60px;
+	}
+
+	&--headline--accent {
+		color: #FFEF00;
+	}
+
+	&--tagline, &-feature--tagline {
+		color: #FFF;
+
+		//font-family: $font-family-sap-bentonsans-bold;
+		font-size: 23px;
+		margin-top: -12px;
+	}
+
+	&-feature {
+		&--learn-more {
+			font-family: 'Bentonsans-Medium', Arial, Helvetica, sans-serif;
+			background-color: #148fcf;
+			color: #fff;
+			padding: 10px 25px;
+			display: block;
+			width: 85px;
+			margin: auto;
+			margin-top: -5px;
+			font-size: 15px;
+
+			&:hover {
+				text-decoration: none;
+				background-color: #f0ab00;
+			}
+		}
+
+		&--tagline {
+			font-family: 'Bentonsans-Medium', Arial, Helvetica, sans-serif;
+			line-height: 28px;
+			margin-top: -7px;
+		}
+
+		&--headline {
+			padding-top: 5px;
+			font-size: 41px;
+			font-family: 'Bentonsans-Medium', Arial, Helvetica, sans-serif;
+		}
+	}
+
+	&--link {
+		color: #FFF;
+
+		//font-family: $font-family-sap-bentonsans-regular;
+		font-size: 18px;
+		margin-top: 40px;
+		text-decoration: underline;
+	}
+}
+
+// 	Banner background-color for Mobile devices
+.adb-responsive {
+	.sap-banner {
+		&--slide {
+			background-color: $sap-blue2;
+		}
+	}
+}
+
+.sap-slider-enter {
+	transform: translate(100%);
+
+	&.sap-slider-enter-active {
+		transform: translate(0%);
+		transition: transform 2000ms ease-in-out;
+	}
+}
+
+.sap-slider-leave {
+	transform: translate(0%);
+
+	&.sap-slider-leave-active {
+		transform: translate(-100%);
+		transition: transform 2000ms ease-in-out;
+	}
+}

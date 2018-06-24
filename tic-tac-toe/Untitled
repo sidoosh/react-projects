@@ -1,0 +1,87 @@
+class ContiguousArray {
+
+    isArrayContiguous(userInput) {
+    const temp = userInput;
+    const len = temp.length;
+    let i;
+    while(i < len) {
+        if()
+    }
+
+    }
+
+}
+
+
+Requirements:
+
+- duplicates allowed
+-
+
+
+
+- what I want is
+ - first question: Do you have a friend to play with? yes/ no
+   - if yes then display 1st player X, Second Player Y
+   - if no then you are player X and play with computer player
+- then logic to
+ - if the 2 players are present then normal logic, with possibility to go back
+
+
+LinkedList:
+function listLength(node nodeA) {
+    Node temp = nodeA;
+    count = 1;
+    while(temp.next != null) {
+        temp = nodeA.next;
+        count++;
+    }
+}
+
+
+
+function findBinary(arr) {
+    let temp = arr;
+    let map = new Map();
+    let convert = arr.filter((element) => typeof element == 'number')
+        .map((element) => {
+            let binaryElement = element.toString(2);
+            let count = binaryElement.match(/1/gi).length;
+            map.set(parseInt(binaryElement, 10), count);
+            return map;
+        });
+    return convert;
+}
+
+
+function rotateArrayByN(arr, n) {
+    let rotatedArray = arr;
+    for(let i = 0; i < n; i++) {
+        let temp = arr.pop();
+        rotatedArray.unshift(temp);
+    }
+    return rotatedArray;
+}
+
+function decodeMessage(message) {
+    let len = message.length;
+    let decodedMessage = '';
+    let temp = '';
+    for(let i=0; i<len; i++) {
+        let charCode = message.charAt(i);
+        if(charCode === ' ') {
+			decodedMessage += charCode;
+            continue;
+        }
+        temp = message.charCodeAt(i) + 3;
+        if(charCode.match(/[A-Z]/)  && temp > 90) {
+            temp = (temp - 90) + 65;
+        }
+        if(charCode.match(/[a-z]/)  && temp > 122) {
+            temp = (temp - 122) + 97;
+        }
+        
+        decodedMessage += String.fromCharCode(temp);
+    }
+	return decodedMessage;
+}
